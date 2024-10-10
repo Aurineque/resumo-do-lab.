@@ -1,8 +1,27 @@
-# resumo-do-lab.
-Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab Criando VM no Azure.
-## Tempos de SLA
-![image](https://github.com/user-attachments/assets/6214b6f9-ade5-4d50-9e15-03d63013f102)
+# resumo do lab Dominando o Armazenamento na Azure
 
-Ao criar uma VM, nas opções de disponibilidade é possível escolher zonas de disponibilidade, onde será criado o disco gerenciado e o ip público.
+## Criando
 
-Isso implicará diretamente no valor do SLA, gerando replicação para aumento da disponibilidade. Lembrando que quanto menor o tempo de indisponibilidade maior será o custo.
+Nome da conta de armazenamento: é preciso que este nome seja único, portanto é bom ser bem específico ao criar o nome para garantir que ele não seja igual a outro já existente.
+
+Desempenho
+
+  -Standard: Menor performance, utiliza discos com menor performance, cobrança de alocação conforme o uso.
+
+  -Premium: Maior performance, utiliza discos com maior performance, cobrança de alocação total.
+
+  Redundância:
+
+  ![image](https://github.com/user-attachments/assets/28354350-972c-4a2f-9f7d-2294d0398eb5)
+
+Compartilhamento de arquivos
+
+SMB porta 445
+
+## AzCopy
+
+aplicativo executável para a máquina, utilizando ele podemos transferir copias de arquivos de nossa máquina para a conta de armazenamento.
+
+## Gerenciador de armazenamento
+
+Realiza o mesmo trabalho do AzCopy, porém se utilizar de uma plataforma interativa.
